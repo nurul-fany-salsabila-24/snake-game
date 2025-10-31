@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    background: #88cbe3; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4c4c4c;
+    margin: 0;
+    padding: 20px;
+}
+
+canvas {
+    border: 2px solid white;
+    background: #fdcdcd;
+    display: block;
+    margin: 10px auto;
+}
+
+button {
+    padding: 10px 16px;
+    background: #fc9cf9;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.info {
+    margin: 10px;
+    font-size: 18px;
+}
