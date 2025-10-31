@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <style>
+        body {
+            margin: 0;
+            text-align: center;
+            background: url("https://i.imgur.com/XHyvKkX.jpeg") no-repeat center center fixed;
+            background-size: cover;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        canvas {
+            background-color: rgba(0, 0, 0, 0.7);
+            display: block;
+            margin: 20px auto;
+            border: 4px solid limegreen;
+            border-radius: 10px;
+        }
+
+        #score {
+            font-size: 24px;
+            margin: 10px;
+            color: yellow;
+        }
+
+        #startBtn {
+            padding: 10px 20px;
+            background: limegreen;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            color: white;
+        }
+
+        #gameOver {
+            display: none;
+            font-size: 28px;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🐍 Snake Game</h1>
+    <p>Skor: <span id="score">0</span></p>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id="gameOver">GAME OVER!</div>
+    <button id="startBtn">Mulai Game</button>
+
+    <!-- 🎵 Suara -->
+    <audio id="backgroundMusic" loop src="game-music-loop-7-145285.mp3"></audio>
+    <audio id="eatSound" src="eat-323883.mp3"></audio>
+    <audio id="moveSound" src="riser-hit-sfx-001-289802.mp3"></audio>
+    <audio id="gameOverSound" src="game-over-417465.mp3"></audio>
+
+    <!-- 💻 Hubungkan ke file JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
